@@ -1,5 +1,5 @@
 # Features
-All the following features can be enabled/disabled. If you want to change features, please read the [API Configuration Properties Section](api.md#configuration-properties) for further information on how to do so.
+All the following features can be enabled/disabled. If you want to change features, please read the [API Configuration Properties](api.md#configuration-properties) section for further information on how to do so.
 
 ---
 

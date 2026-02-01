@@ -48,7 +48,7 @@ Replicates a message to every Player across all active game servers of the same 
 Flux:broadcastGlobalMessage(message: string): ()
 ```
 !!! info
-    This method can only be called form the server.
+    This method can only be called from the server.
 !!! warning
     The content of the message is not automatically filtered. This Method should never contain any user generated content!
 
@@ -177,6 +177,8 @@ Flux.ChatBehaviour_ChatCache: boolean
 Ever wanted to read previous messages in the chat before you joined the game server? The Chat Cache system loads previous messages into the chat of newly joined players.
 !!! danger
     Enabling this could potentially get your game in trouble.
+    ??? example "Expand to read why"
+        The Chat Cache stores the messages that are sent in the Flux Chat on the server. If a player chats, their message stored in the chat cache and then they leave, I have no way of checking if that person is allowed to chat with any player that joins the server now. I could technically only display the previous messages of players that are still in the game server, as this lets me check the validity of that action but it also kind of removes the functionality of the chat cache. As Roblox' new content sharing rule under age groups is very undocumented (in my opinion), I'm simply marking this as possibly risky to ensure there's no misunderstandings.
 
 ---
 ### Flux.ChatBehaviour_MaximumMessageLength

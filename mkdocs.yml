@@ -1,5 +1,7 @@
 site_name: Flux Chat
 site_url: https://draxfm.github.io/Flux/
+repo_url: https://github.com/DraxFM/Flux
+repo_name: DraxFM/Flux
 docs_dir: docs
 nav:
   - Home:
@@ -7,7 +9,7 @@ nav:
     - Get Started: installation.md
     - Features: features.md
     - API: api.md
-  - Bug Reporting: bug-reporting.md
+  - Other: other.md
 theme:
   name: material
   icon:
